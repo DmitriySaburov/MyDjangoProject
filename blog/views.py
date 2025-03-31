@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "blog/index.html")
+    data = {"age": 50}
+    return render(request, 'blog/index.html', context=data)

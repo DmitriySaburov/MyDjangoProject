@@ -1,3 +1,4 @@
 venvMyDjangoProject/
 __pycache__/
 SECRET_KEY.py
+.vscode/
