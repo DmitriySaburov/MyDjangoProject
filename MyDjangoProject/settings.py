@@ -118,6 +118,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# путь к папке с общими статическими файлами
+STATICFILES_DIRS = [
+    BASE_DIR / "MyDjangoProject/static",
+]
+
+# путь к папке, куда будут собраны все статические файлы при развертывании проекта на сервере
+STATIC_ROOT = BASE_DIR / "static"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
