@@ -2,11 +2,28 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Django 5</title>
+    <title>
+    {% block title %}
+        title from base.html
+    {% endblock title %}
+    </title>
 </head>
 <body>
+<div>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about/">О нас</a></li>
+        </ul>
+    </nav>
+</div>
+<div>
     {% block body %}
-        Главная страница
+        Главная страница from base.html
     {% endblock body %}
+</div>
+<div>
+    {% include 'blog/banner.html' %}
+</div>
 </body>
 </html>
